@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "s.cybozu.com Redirect",
+  "version": "0.0.0-development",
+  "description": "Redirect s.cybozu.com to cybozu.com",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.s.cybozu.com/*",
+    "https://*.s.cybozu-dev.com/*",
+    "https://*.s.cybozu.cn/*",
+    "https://*.s.cybozu-dev.cn/*"
+  ]
+}
