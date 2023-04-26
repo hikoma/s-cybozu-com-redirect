@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1.\\2"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://(.+?)\\.s\\.(.+)$",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
